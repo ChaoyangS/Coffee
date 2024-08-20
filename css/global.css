@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  color: #393939;
+}
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.bg-light {
+  background-color: #fff0ed;
+}
+
+.social-nitro {
+  width: 2.8rem;
+}
+
+.social {
+  width: 3.125rem;
+}
+
+.nitro {
+  display: flex;
+  margin-left: auto;
+}
+
+.nitro li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+li.nitro a {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3125rem;
+}
+
+.nitro a {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.nitro ul {
+  display: inline;
+}
+.bluetext a {
+  color: #5bacc3;
+}
