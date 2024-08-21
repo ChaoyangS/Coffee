@@ -69,8 +69,8 @@ p.card--price {
 }
 .promo__text {
   display: flex;
-  width: 30%;
-  padding: 10rem;
+  width: 50%;
+  padding: 5rem;
   flex-direction: column;
 }
 .promo__up {
@@ -92,15 +92,37 @@ p.card--price {
   width: 3.125rem;
 }
 
+.promo-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0.6rem;
+  width: 50%;
+  margin: 5rem;
+  background-image: url("../assets/images/coldbrewbackground.png");
+  background-size: cover;
+}
+
+.border-tiltedcan {
+  position: absolute; /*take it out of the natural flow*/
+  box-sizing: border-box;
+  width: 100%;
+  top: -1rem;
+  left: -1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border: 0.3rem solid #5bacc3;
+  z-index: 5;
+  pointer-events: none;
+}
+
 .promo__pic1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 7rem;
-  width: 10%;
-  height: 10%;
-  background-image: url("../assets/images/coldbrewbackground.png");
-  background-size: cover;
+  width: 40%;
+  height: 40%;
 }
 
 p.promo {
@@ -139,6 +161,7 @@ ul.nitro a {
 }
 
 button {
+  position: relative;
   width: 11.25rem;
   padding: 1.25rem;
   background-color: #5bacc3;
@@ -149,6 +172,19 @@ button a {
   text-decoration: none;
   color: white;
   font-size: 1.3125rem;
+}
+.border-button {
+  position: absolute; /*take it out of the natural flow*/
+  box-sizing: border-box;
+  width: 11.25rem;
+  height: 4rem;
+  top: -0.3rem;
+  left: -0.3rem;
+  right: 0.3rem;
+  bottom: 0.3rem;
+  border: 0.15rem solid black;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .button--container--view {
@@ -203,4 +239,21 @@ img.card--pic {
   text-align: center;
   gap: 5px;
   margin: auto;
+}
+
+.footer-picleft {
+  position: relative;
+  left: -6rem;
+  top: 1rem;
+}
+.footer-picright {
+  position: relative;
+  bottom: -5rem;
+  left: 6rem;
+}
+
+img.footer-coffee {
+  position: relative;
+  width: 90px;
+  opacity: 0.6;
 }
