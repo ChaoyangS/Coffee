@@ -54,6 +54,36 @@ li.nitro a {
   color: #5bacc3;
 }
 
+@keyframes color-change {
+  from {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  to {
+    background-color: #393939;
+  }
+}
+p.promo {
+  animation: color-change 2.5s infinite;
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img.promo__pic1 {
+  transition: transform 2s;
+}
+img.promo__pic1:hover {
+  animation: rotate-animation 2s infinite linear;
+}
+
 nav {
   background-color: #fff0ed;
 }
@@ -169,29 +199,42 @@ p.card--price {
   padding: 4rem 0.6rem;
   width: 50%;
   margin: 5rem;
+  /*background-image: url("../assets/images/coldbrewbackground.png");*/
+  background-size: contain;
+}
+
+.promo-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0.6rem;
+  width: 25rem;
+  height: 25rem;
+  margin: 0rem;
   background-image: url("../assets/images/coldbrewbackground.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .border-tiltedcan {
   position: absolute; /*take it out of the natural flow*/
   box-sizing: border-box;
-  width: 100%;
-  top: -1rem;
-  left: -1rem;
-  right: 1rem;
-  bottom: 1rem;
+  width: 26rem;
+  height: 26rem;
+  top: 3rem;
+  left: 3rem;
+  right: 0rem;
+  bottom: 0rem;
   border: 0.3rem solid #5bacc3;
-  z-index: 5;
-  pointer-events: none;
 }
 
-.promo__pic1 {
-  display: flex;
+img.promo__pic1 {
+  width: auto;
   justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 40%;
+  display: flex;
+  top: 8rem;
+  position: absolute;
 }
 
 p.promo {
@@ -207,6 +250,7 @@ p.promo {
   font-weight: 400;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  z-index: -5;
 }
 
 b.promo__code {
@@ -236,23 +280,33 @@ button {
   padding: 1.5rem;
   background-color: #5bacc3;
   border: none;
-  transition: 0.5s;
-}
-button:hover {
-  background-color: darkblue;
 }
 
 a.border-button-word {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-size: 1.2rem;
+  border: 0.15rem solid #393939;
+  padding: 1rem 1rem;
+  top: -0.5rem;
+  left: -0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+a.border-button-word:active {
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
 }
 
+/*
 .border-button {
-  position: absolute; /*take it out of the natural flow*/
+  position: absolute; 
   box-sizing: border-box;
   width: 11.25rem;
   height: 4.5rem;
@@ -260,11 +314,10 @@ a.border-button-word {
   left: -0.3rem;
   right: 0.3rem;
   bottom: 0.3rem;
-  border: 0.15rem solid #393939;
+  border: 0.15rem solid $neutral-color1;
   z-index: 5;
   pointer-events: none;
-}
-
+} */
 .button--container--view {
   display: flex;
   justify-content: center;
