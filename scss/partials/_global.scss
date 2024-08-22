@@ -1,6 +1,13 @@
+$primary-color1: #5bacc3;
+$primary-color2: #fff0ed;
+$neutral-color1: #393939;
+$neutral-color2: #909090;
+$neutral-color3: #f7f7f7;
+$neutral-color4: #fff;
+
 * {
   margin: 0;
-  color: #393939;
+  color: $neutral-color1;
 }
 body {
   font-family: "Open Sans";
@@ -8,7 +15,7 @@ body {
 }
 
 .bg-light {
-  background-color: #fff0ed;
+  background-color: $primary-color2;
 }
 
 .social-nitro {
@@ -47,5 +54,5 @@ li.nitro a {
   display: inline;
 }
 .bluetext a {
-  color: #5bacc3;
+  color: $primary-color1;
 }
