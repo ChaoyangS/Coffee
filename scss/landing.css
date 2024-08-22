@@ -9,7 +9,9 @@ body {
 }
 
 .bg-light {
+  align-items: center;
   background-color: #fff0ed;
+  height: 5rem;
 }
 
 .social-nitro {
@@ -127,7 +129,7 @@ p.card--price {
   flex-wrap: nowrap;
   justify-content: space-around;
   padding: 1.25rem;
-  height: 180px;
+  height: 12rem;
 }
 
 .promo__text {
@@ -328,6 +330,6 @@ img.card--pic {
 
 img.footer-coffee {
   position: relative;
-  width: 90px;
+  width: 5.5rem;
   opacity: 0.6;
 }/*# sourceMappingURL=landing.css.map */

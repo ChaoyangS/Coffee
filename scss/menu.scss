@@ -35,7 +35,7 @@ section.menu {
   flex-direction: column;
   justify-content: center;
   font-size: 3.5rem;
-  font-weight: 300;
+  font-weight: $font-weight1;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -68,7 +68,7 @@ ul.menu a {
   text-decoration: none;
   color: $neutral-color4;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $font-weight2;
 }
 
 .menu li {
@@ -84,18 +84,18 @@ li.menu:before {
 h2 {
   text-align: center;
   font-size: 2.75rem;
-  font-weight: 300;
+  font-weight: $font-weight1;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 h3 {
   text-align: center;
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: $font-weight1;
 }
 
 p {
-  font-weight: 300;
+  font-weight: $font-weight1;
   text-align: left;
 }
 

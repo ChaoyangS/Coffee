@@ -8,6 +8,7 @@ nav {
 .footer {
   background-color: $primary-color2;
 }
+
 section.nitro-coffee {
   width: 50%;
   height: 32rem;
@@ -59,7 +60,7 @@ h1.products {
 p.card--price {
   color: $primary-color1;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: $font-weight3;
 }
 
 .footer {
@@ -67,7 +68,7 @@ p.card--price {
   flex-wrap: nowrap;
   justify-content: space-around;
   padding: 1.25rem;
-  height: 180px;
+  height: 12rem;
 }
 .promo__text {
   display: flex;
@@ -137,19 +138,19 @@ p.promo {
   color: $neutral-color4;
   font-size: 2.5rem;
   margin: 7rem;
-  font-weight: 400;
+  font-weight: $font-weight2;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 b.promo__code {
-  font-weight: 700;
+  font-weight: $font-weight4;
   color: $neutral-color4;
   padding-left: 1rem;
 }
 
 p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: $font-weight2;
   padding-bottom: 0rem;
 }
 
@@ -159,7 +160,7 @@ ul.nitro {
 
 ul.nitro a {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $font-weight2;
 }
 
 button {
@@ -196,13 +197,13 @@ button a {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: $font-weight1;
   font-size: 2.0625rem;
   padding-top: 1.25rem;
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: $font-weight1;
   font-size: 3rem;
 }
 
@@ -257,6 +258,6 @@ img.card--pic {
 
 img.footer-coffee {
   position: relative;
-  width: 90px;
+  width: 5.5rem;
   opacity: 0.6;
 }

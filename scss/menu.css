@@ -9,7 +9,9 @@ body {
 }
 
 .bg-light {
+  align-items: center;
   background-color: #fff0ed;
+  height: 5rem;
 }
 
 .social-nitro {

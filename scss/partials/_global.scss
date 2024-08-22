@@ -5,17 +5,24 @@ $neutral-color2: #909090;
 $neutral-color3: #f7f7f7;
 $neutral-color4: #fff;
 
+$font-weight1: 300;
+$font-weight2: 400;
+$font-weight3: 600;
+$font-weight4: 700;
+
 * {
   margin: 0;
   color: $neutral-color1;
 }
 body {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: $font-weight2;
 }
 
 .bg-light {
+  align-items: center;
   background-color: $primary-color2;
+  height: 5rem;
 }
 
 .social-nitro {
@@ -39,13 +46,13 @@ body {
 li.nitro a {
   list-style-type: none;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: $font-weight2;
   font-size: 1.3125rem;
 }
 
 .nitro a {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: $font-weight1;
   text-decoration: none;
   text-transform: none;
 }
