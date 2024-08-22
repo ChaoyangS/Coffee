@@ -166,21 +166,29 @@ ul.nitro a {
 button {
   position: relative;
   width: 11.25rem;
-  padding: 1.25rem;
+  padding: 1.5rem;
   background-color: $primary-color1;
   border: none;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: darkblue;
+  }
 }
 
-button a {
+a.border-button-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: $neutral-color4;
-  font-size: 1.3125rem;
+  font-size: 1.2rem;
 }
 .border-button {
   position: absolute; /*take it out of the natural flow*/
   box-sizing: border-box;
   width: 11.25rem;
-  height: 4rem;
+  height: 4.5rem;
   top: -0.3rem;
   left: -0.3rem;
   right: 0.3rem;
