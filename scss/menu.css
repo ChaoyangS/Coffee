@@ -8,13 +8,13 @@ body {
   font-weight: 400;
 }
 
-.bg-light {
+.bg--light {
   align-items: center;
   background-color: #fff0ed;
   height: 5rem;
 }
 
-.social-nitro {
+.social--nitro {
   width: 2.8rem;
 }
 
@@ -32,7 +32,7 @@ body {
   padding: 1rem;
 }
 
-li.nitro a {
+li.nitro__list a {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -52,6 +52,15 @@ li.nitro a {
 
 .bluetext a {
   color: #5bacc3;
+}
+
+footer {
+  background-color: #fff0ed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 1.25rem;
+  height: 12rem;
 }
 
 @keyframes color-change {
@@ -84,12 +93,12 @@ img.promo__pic1:hover {
   animation: rotate-animation 2s infinite linear;
 }
 
-.hot-drinks,
+.hot--drinks,
 .pastries {
   background-color: #fff0ed;
 }
 
-.cold-drink {
+.cold--drink {
   background-color: #f7f7f7;
 }
 
@@ -108,7 +117,7 @@ section.menu {
   align-items: center;
 }
 
-.menu-title {
+.menu--title {
   position: relative;
   display: flex;
   background-color: #393939;
@@ -125,7 +134,7 @@ section.menu {
   margin-right: auto;
 }
 
-.menu-word {
+.menu--word {
   position: relative;
   display: flex;
   color: #fff;

@@ -8,13 +8,13 @@ body {
   font-weight: 400;
 }
 
-.bg-light {
+.bg--light {
   align-items: center;
   background-color: #fff0ed;
   height: 5rem;
 }
 
-.social-nitro {
+.social--nitro {
   width: 2.8rem;
 }
 
@@ -32,7 +32,7 @@ body {
   padding: 1rem;
 }
 
-li.nitro a {
+li.nitro__list a {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -52,6 +52,15 @@ li.nitro a {
 
 .bluetext a {
   color: #5bacc3;
+}
+
+footer {
+  background-color: #fff0ed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 1.25rem;
+  height: 12rem;
 }
 
 @keyframes color-change {
@@ -84,16 +93,11 @@ img.promo__pic1:hover {
   animation: rotate-animation 2s infinite linear;
 }
 
-nav {
+.nitro--coffee {
   background-color: #fff0ed;
 }
 
-.nitro-coffee,
-.footer {
-  background-color: #fff0ed;
-}
-
-section.nitro-coffee {
+section.nitro--coffee {
   width: 50%;
   height: 32rem;
   padding: 3rem 6rem;
@@ -102,15 +106,15 @@ section.nitro-coffee {
   flex-direction: column;
 }
 
-span.nitro-coffee {
+span.nitro--coffee {
   display: flex;
 }
 
-img.nitro-coffee {
+img.nitro--coffee {
   padding: 3rem;
 }
 
-p.nitro-coffee__p {
+p.nitro--coffee__p {
   text-align: left;
   width: 40%;
   padding: 3rem 0;
@@ -130,36 +134,62 @@ h1.products {
   margin-bottom: 1.25rem;
 }
 
-.card--info {
+img.card__pic {
+  padding-top: 1rem;
+  height: 17.5rem;
+}
+
+.card__title {
+  font-size: 2rem;
+}
+
+.card__subtitle {
+  font-size: 1rem;
+  color: #909090;
+}
+
+.card {
+  position: relative;
+  height: 27.5rem;
+  box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+  width: 20.625rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.all--cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  margin: auto;
+}
+
+.card__info {
   display: flex;
   align-items: center;
   background-color: #fff0ed;
   height: 9rem; /* not sure if this is the right way*/
 }
 
-.card--text {
+.card__text {
   width: 70%;
   padding-left: 2rem;
   text-align: left;
 }
 
-.card--price {
+.card__price {
   width: 30%;
   align-items: center;
 }
 
-p.card--price {
+p.card__price {
   color: #5bacc3;
   font-size: 1.8rem;
   font-weight: 600;
-}
-
-.footer {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  padding: 1.25rem;
-  height: 12rem;
 }
 
 .promo__text {
@@ -191,7 +221,7 @@ p.card--price {
   width: 3.125rem;
 }
 
-.promo-area {
+.promo--area {
   position: relative;
   display: flex;
   justify-content: center;
@@ -202,7 +232,7 @@ p.card--price {
   background-size: contain;
 }
 
-.promo-background {
+.promo--background {
   position: relative;
   display: flex;
   justify-content: center;
@@ -216,7 +246,7 @@ p.card--price {
   background-repeat: no-repeat;
 }
 
-.border-tiltedcan {
+.border--tiltedcan {
   position: absolute; /*take it out of the natural flow*/
   box-sizing: border-box;
   width: 27rem;
@@ -264,15 +294,6 @@ p {
   padding-bottom: 0rem;
 }
 
-ul.nitro {
-  list-style-type: none;
-}
-
-ul.nitro a {
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 button {
   position: relative;
   width: 11.25rem;
@@ -281,7 +302,7 @@ button {
   border: none;
 }
 
-a.border-button-word {
+a.border--button--word {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -296,7 +317,7 @@ a.border-button-word {
   right: 0.5rem;
   bottom: 0.5rem;
 }
-a.border-button-word:active {
+a.border--button--word:active {
   top: 0rem;
   left: 0rem;
   right: 0rem;
@@ -324,48 +345,13 @@ b.dates {
   font-style: bold;
 }
 
-img.card--pic {
-  padding-top: 1rem;
-  height: 17.5rem;
-}
-
-.card--title {
-  font-size: 2rem;
-}
-
-.card--subtitle {
-  font-size: 1rem;
-  color: #909090;
-}
-
-.card {
-  position: relative;
-  height: 27.5rem;
-  box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
-  border-radius: 0.625rem;
-  width: 20.625rem;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.all-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1.25rem;
-  align-items: center;
-  text-align: center;
-  gap: 5px;
-  margin: auto;
-}
-
-.footer-picleft {
+.footer__picleft {
   position: relative;
   left: -6rem;
   top: 1rem;
 }
 
-.footer-picright {
+.footer__picright {
   position: relative;
   bottom: -5rem;
   left: 6rem;
@@ -373,7 +359,7 @@ img.card--pic {
   height: fit-content;
 }
 
-img.footer-coffee {
+img.footer__coffee {
   position: relative;
   width: 5.5rem;
   opacity: 0.6;

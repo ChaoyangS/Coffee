@@ -1,12 +1,12 @@
 @use "./partials/global" as *;
 @use "./partials/animation" as *;
 
-.hot-drinks,
+.hot--drinks,
 .pastries {
   background-color: $primary-color2;
 }
 
-.cold-drink {
+.cold--drink {
   background-color: $neutral-color3;
 }
 
@@ -25,7 +25,7 @@ section.menu {
   align-items: center;
 }
 
-.menu-title {
+.menu--title {
   position: relative;
   display: flex;
   background-color: $neutral-color1;
@@ -41,7 +41,7 @@ section.menu {
   margin-left: auto;
   margin-right: auto;
 }
-.menu-word {
+.menu--word {
   position: relative;
   display: flex;
   color: $neutral-color4;

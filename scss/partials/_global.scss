@@ -19,13 +19,13 @@ body {
   font-weight: $font-weight2;
 }
 
-.bg-light {
+.bg--light {
   align-items: center;
   background-color: $primary-color2;
   height: 5rem;
 }
 
-.social-nitro {
+.social--nitro {
   width: 2.8rem;
 }
 
@@ -43,7 +43,7 @@ body {
   padding: 1rem;
 }
 
-li.nitro a {
+li.nitro__list a {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: $font-weight2;
@@ -62,4 +62,13 @@ li.nitro a {
 }
 .bluetext a {
   color: $primary-color1;
+}
+
+footer {
+  background-color: $primary-color2;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 1.25rem;
+  height: 12rem;
 }
