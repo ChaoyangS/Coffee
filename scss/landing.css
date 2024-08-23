@@ -196,10 +196,9 @@ p.card--price {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0.6rem;
+  padding: 2rem 0.6rem;
   width: 50%;
-  margin: 5rem;
-  /*background-image: url("../assets/images/coldbrewbackground.png");*/
+  margin: 3rem;
   background-size: contain;
 }
 
@@ -208,9 +207,9 @@ p.card--price {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0.6rem;
-  width: 25rem;
-  height: 25rem;
+  padding: 2rem 2rem;
+  width: 23rem;
+  height: 23rem;
   margin: 0rem;
   background-image: url("../assets/images/coldbrewbackground.png");
   background-size: contain;
@@ -220,12 +219,12 @@ p.card--price {
 .border-tiltedcan {
   position: absolute; /*take it out of the natural flow*/
   box-sizing: border-box;
-  width: 26rem;
-  height: 26rem;
-  top: 3rem;
-  left: 3rem;
-  right: 0rem;
-  bottom: 0rem;
+  width: 27rem;
+  height: 27rem;
+  top: 1rem;
+  left: 4rem;
+  right: 6rem;
+  bottom: 6rem;
   border: 0.3rem solid #5bacc3;
 }
 
@@ -246,10 +245,10 @@ p.promo {
   background-color: #393939;
   color: #fff;
   font-size: 2.5rem;
-  margin: 7rem;
+  margin: 3rem;
   font-weight: 400;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   z-index: -5;
 }
 
@@ -288,7 +287,7 @@ a.border-button-word {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 1.2rem;
   border: 0.15rem solid #393939;
   padding: 1rem 1rem;
@@ -304,20 +303,6 @@ a.border-button-word:active {
   bottom: 0rem;
 }
 
-/*
-.border-button {
-  position: absolute; 
-  box-sizing: border-box;
-  width: 11.25rem;
-  height: 4.5rem;
-  top: -0.3rem;
-  left: -0.3rem;
-  right: 0.3rem;
-  bottom: 0.3rem;
-  border: 0.15rem solid $neutral-color1;
-  z-index: 5;
-  pointer-events: none;
-} */
 .button--container--view {
   display: flex;
   justify-content: center;
